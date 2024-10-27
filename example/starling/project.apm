@@ -1,0 +1,47 @@
+{
+    "identifier": "com.distriqt.test",
+    "name": "TestGameInput",
+    "filename": "TestGameInput",
+    "version": "0.0.1",
+    "versionLabel": "",
+    "platforms": [],
+    "dependencies": [
+        {
+            "version": "1.13.100",
+            "id": "androidx.core"
+        },
+        {
+            "version": "9.0.0",
+            "id": "com.distriqt.GameServices"
+        },
+        {
+            "version": "18.5.0",
+            "id": "com.distriqt.playservices.Base"
+        },
+        {
+            "version": "1.8.220",
+            "id": "com.jetbrains.kotlin"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui"
+        },
+        {
+            "version": "4.1.1",
+            "id": "feathersui_MetalWorksMobileTheme"
+        },
+        {
+            "version": "2.7.0",
+            "id": "starling"
+        }
+    ],
+    "configuration": {
+        "playGamesAppId": {
+            "name": "playGamesAppId",
+            "required": "true",
+            "value": ""
+        }
+    },
+    "repositories": [],
+    "deployOptions": {}
+}
