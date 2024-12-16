@@ -42,7 +42,7 @@
 			</dict>
 
 			<key>MinimumOSVersion</key>
-			<string>11.0</string>
+			<string>12.0</string>
 			<key>UILaunchStoryboardName</key>
 			<string>LaunchScreen</string>
 			
@@ -54,37 +54,9 @@
   <android>
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto" >
   <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="34"/>
-  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-  <uses-permission android:name="android.permission.INTERNET"/>
-  <permission android:name="air.com.distriqt.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
-  <uses-permission android:name="air.com.distriqt.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-  <!-- Required by older versions of Google Play services to create IID tokens -->
-  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-  <uses-permission android:name="android.permission.WAKE_LOCK"/>
-  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
-  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
-  <application android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+  <application>
     <meta-data android:name="android.max_aspect" android:value="2.5"/>
     <meta-data android:name="android.notch_support" android:value="true"/>
-    <uses-library android:name="app-inputmapping" android:required="false"/>
-    <provider android:name="androidx.startup.InitializationProvider" android:authorities="air.com.distriqt.test.androidx-startup" android:exported="false">
-      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
-    </provider>
-    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-    <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
-    <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
-    <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:enabled="true" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE"/>
-    <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
-    <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
-      <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-    </service>
   </application>
 </manifest>
 ]]></manifestAdditions>
